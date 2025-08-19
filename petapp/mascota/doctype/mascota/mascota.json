@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-18 21:03:00.720634",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "informaci\u00f3n_general_section",
+  "pet_name",
+  "birthday",
+  "column_break_okzw",
+  "pet_type",
+  "race",
+  "section_break_dsxh",
+  "photo"
+ ],
+ "fields": [
+  {
+   "fieldname": "informaci\u00f3n_general_section",
+   "fieldtype": "Section Break",
+   "label": "Informaci\u00f3n General"
+  },
+  {
+   "fieldname": "pet_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Nombre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "birthday",
+   "fieldtype": "Date",
+   "label": "Fecha de Nacimiento"
+  },
+  {
+   "fieldname": "column_break_okzw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pet_type",
+   "fieldtype": "Link",
+   "label": "Tipo",
+   "options": "Tipo Mascota"
+  },
+  {
+   "fieldname": "race",
+   "fieldtype": "Link",
+   "label": "Raza",
+   "options": "Raza"
+  },
+  {
+   "fieldname": "section_break_dsxh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Foto"
+  }
+ ],
+ "grid_page_length": 50,
+ "image_field": "photo",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-18 21:25:25.047302",
+ "modified_by": "Administrator",
+ "module": "Mascota",
+ "name": "Mascota",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "pet_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

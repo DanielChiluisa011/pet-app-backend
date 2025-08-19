@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-18 20:57:56.403890",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "email",
+  "column_break_izjo",
+  "identification",
+  "phone",
+  "section_break_eeem",
+  "gender",
+  "photo",
+  "column_break_wskw",
+  "birthday",
+  "mascotas_section",
+  "pets",
+  "section_break_swxs",
+  "token_push",
+  "column_break_wgcs",
+  "password"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre Completo",
+   "length": 120,
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_izjo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "identification",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Identificaci\u00f3n",
+   "length": 20,
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Celular"
+  },
+  {
+   "fieldname": "section_break_eeem",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "G\u00e9nero",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "column_break_wskw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "birthday",
+   "fieldtype": "Date",
+   "label": "Fecha de Nacimiento"
+  },
+  {
+   "fieldname": "section_break_swxs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "token_push",
+   "fieldtype": "Data",
+   "label": "Token Push Notification"
+  },
+  {
+   "fieldname": "column_break_wgcs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "Contrase\u00f1a"
+  },
+  {
+   "fieldname": "mascotas_section",
+   "fieldtype": "Section Break",
+   "label": "Mascotas"
+  },
+  {
+   "fieldname": "pets",
+   "fieldtype": "Table",
+   "label": "Mascotas",
+   "options": "Tutor Mascota"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Foto"
+  }
+ ],
+ "grid_page_length": 50,
+ "image_field": "photo",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-18 21:25:04.684337",
+ "modified_by": "Administrator",
+ "module": "Tutor",
+ "name": "Tutor",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "identification, full_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

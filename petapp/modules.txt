@@ -1,1 +1,4 @@
 Pet App
+Tutor
+Mascota
+Autenticación
