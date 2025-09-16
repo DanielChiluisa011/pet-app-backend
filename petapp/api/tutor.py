@@ -6,10 +6,12 @@ import frappe
 from frappe.utils.file_manager import save_file
 import re
 import base64
+import json
 
 @frappe.whitelist(allow_guest=True, methods=["POST"])
 def create_tutor():
      try:
+        print("hola")
         raw_data = frappe.request.data
         data = json.loads(raw_data.decode("utf-8")) if raw_data else {}
             

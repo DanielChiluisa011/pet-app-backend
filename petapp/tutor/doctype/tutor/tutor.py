@@ -43,7 +43,7 @@ def createTutor():
 	docTutor.db_set("photo", imageTutor.file_url)
 
 	#Crea token push notificacion
-	createOneSignalToken():
+	createOneSignalToken()
 
 	frappe.db.commit()
 	return {
