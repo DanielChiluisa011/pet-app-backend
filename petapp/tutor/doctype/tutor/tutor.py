@@ -54,7 +54,7 @@ def createOneSignalToken(email, phone, id):
 	time_zone = pytz.timezone("America/Guayaquil")
 	timestamp_now = int(datetime.now().timestamp())
 	url = "https://api.onesignal.com/users"   # ajusta la URL base según tu config
-    headers = {
+	headers = {
         "Content-Type": "application/json",
         "Authorization": "Bearer os_v2_app_t7mtrcuo4rdnzmhzsnpyx4j33ywhup3cuamuldeclpewp4xvp555slyl4pwbypjskadnot6bfz3ndkl6zzfny5k5vfdsc3kgnvw37ey"  # si tu API de OneSignal lo requiere
     }
@@ -72,11 +72,11 @@ def createOneSignalToken(email, phone, id):
 	identity = {
     	"external_id": str(id)
 	}
-    payload = {
+	payload = {
         "properties": properties,
         "identity": identity
     }
 
-    response = requests.post(url, json=payload, headers=headers)
-    response.raise_for_status() 
+	response = requests.post(url, json=payload, headers=headers)
+	response.raise_for_status() 
 	print(response)
